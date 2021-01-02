@@ -19,18 +19,18 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"8.0.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Suche...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"8.0.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"بحث...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
 
-  <meta name="description" content="克隆源码12git clone https:&#x2F;&#x2F;gitee.com&#x2F;winlinvip&#x2F;srs.oschina.git srs &amp;&amp;cd srs&#x2F;trunk &amp;&amp; git remote set-url origin https:&#x2F;&#x2F;github.com&#x2F;ossrs&#x2F;srs.gi">
+  <meta name="description" content="WSL2安装SRS克隆源码12git clone https:&#x2F;&#x2F;gitee.com&#x2F;winlinvip&#x2F;srs.oschina.git srs &amp;&amp;cd srs&#x2F;trunk &amp;&amp; git remote set-url origin https:&#x2F;&#x2F;github.com&#x2F;ossrs&amp;#x">
 <meta property="og:type" content="article">
-<meta property="og:title" content="WSL2 安装SRS">
+<meta property="og:title" content="SRS在WSL2上的最佳实践">
 <meta property="og:url" content="http://example.com/2021/01/02/hello-world/index.html">
 <meta property="og:site_name" content="sisyphus&#39;s blog">
-<meta property="og:description" content="克隆源码12git clone https:&#x2F;&#x2F;gitee.com&#x2F;winlinvip&#x2F;srs.oschina.git srs &amp;&amp;cd srs&#x2F;trunk &amp;&amp; git remote set-url origin https:&#x2F;&#x2F;github.com&#x2F;ossrs&#x2F;srs.gi">
+<meta property="og:description" content="WSL2安装SRS克隆源码12git clone https:&#x2F;&#x2F;gitee.com&#x2F;winlinvip&#x2F;srs.oschina.git srs &amp;&amp;cd srs&#x2F;trunk &amp;&amp; git remote set-url origin https:&#x2F;&#x2F;github.com&#x2F;ossrs&amp;#x">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-01-02T09:02:49.384Z">
-<meta property="article:modified_time" content="2021-01-02T15:40:20.708Z">
+<meta property="article:modified_time" content="2021-01-02T15:51:53.646Z">
 <meta property="article:author" content="sisyphus">
 <meta name="twitter:card" content="summary">
 
@@ -48,7 +48,7 @@
   };
 </script>
 
-  <title>WSL2 安装SRS | sisyphus's blog</title>
+  <title>SRS在WSL2上的最佳实践 | sisyphus's blog</title>
   
 
 
@@ -100,7 +100,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Navigationsleiste an/ausschalten">
+    <div class="toggle" aria-label="تشغيل شريط التصفح">
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
@@ -128,37 +128,37 @@
   <ul class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Startseite</a>
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
 
   </li>
         <li class="menu-item menu-item-about">
 
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>Über</a>
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>معلومات</a>
 
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Schlagwörter</a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>الوسوم</a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Kategorien</a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>التصنيفات</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archiv</a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>الأرشيفات</a>
 
   </li>
         <li class="menu-item menu-item-schedule">
 
-    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Zeitplan</a>
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>التقويم</a>
 
   </li>
         <li class="menu-item menu-item-sitemap">
 
-    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a>
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>خريطة الموقع</a>
 
   </li>
         <li class="menu-item menu-item-commonweal">
@@ -186,16 +186,16 @@
     <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
-          Inhaltsverzeichnis
+          المحتويات
         </li>
         <li class="sidebar-nav-overview">
-          Übersicht
+          عام
         </li>
       </ul>
 
       <!--noindex-->
       <section class="post-toc-wrap sidebar-panel">
-          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%8B%E9%9A%86%E6%BA%90%E7%A0%81"><span class="nav-number">1.</span> <span class="nav-text">克隆源码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BC%96%E8%AF%91"><span class="nav-number">2.</span> <span class="nav-text">编译</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8SRS"><span class="nav-number">3.</span> <span class="nav-text">启动SRS</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8VS-Code%E8%B0%83%E8%AF%95%E5%AE%89%E8%A3%85%E5%9C%A8WSL%E4%B8%AD%E7%9A%84SRS"><span class="nav-number"></span> <span class="nav-text">使用VS Code调试安装在WSL中的SRS</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9C%A8vscode%E4%B8%AD%E6%89%93%E5%BC%80srs"><span class="nav-number">1.</span> <span class="nav-text">在vscode中打开srs</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85GDB"><span class="nav-number">2.</span> <span class="nav-text">安装GDB</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E8%B0%83%E8%AF%95"><span class="nav-number">3.</span> <span class="nav-text">配置调试</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B0%83%E8%AF%95"><span class="nav-number">4.</span> <span class="nav-text">调试</span></a></li></ol></div>
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#WSL2%E5%AE%89%E8%A3%85SRS"><span class="nav-number">1.</span> <span class="nav-text">WSL2安装SRS</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%8B%E9%9A%86%E6%BA%90%E7%A0%81"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">克隆源码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BC%96%E8%AF%91"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">编译</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8SRS"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">启动SRS</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8VS-Code%E8%B0%83%E8%AF%95%E5%AE%89%E8%A3%85%E5%9C%A8WSL%E4%B8%AD%E7%9A%84SRS"><span class="nav-number">2.</span> <span class="nav-text">使用VS Code调试安装在WSL中的SRS</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9C%A8vscode%E4%B8%AD%E6%89%93%E5%BC%80srs"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">在vscode中打开srs</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85GDB"><span class="nav-number">2.0.0.2.</span> <span class="nav-text">安装GDB</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E8%B0%83%E8%AF%95"><span class="nav-number">2.0.0.3.</span> <span class="nav-text">配置调试</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B0%83%E8%AF%95"><span class="nav-number">2.0.0.4.</span> <span class="nav-text">调试</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </section>
       <!--/noindex-->
 
@@ -210,7 +210,7 @@
           <a href="/archives/">
         
           <span class="site-state-item-count">1</span>
-          <span class="site-state-item-name">Artikel</span>
+          <span class="site-state-item-name">المقالات</span>
         </a>
       </div>
   </nav>
@@ -262,7 +262,7 @@
     
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          WSL2 安装SRS
+          SRS在WSL2上的最佳实践
         </h1>
 
         <div class="post-meta-container">
@@ -271,10 +271,10 @@
       <span class="post-meta-item-icon">
         <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Veröffentlicht am</span>
+      <span class="post-meta-item-text">نُشر في</span>
       
 
-      <time title="Erstellt: 2021-01-02 17:02:49 / Geändert am: 23:40:20" itemprop="dateCreated datePublished" datetime="2021-01-02T17:02:49+08:00">2021-01-02</time>
+      <time title="أُنشأ: 2021-01-02 17:02:49 / عُدل: 23:51:53" itemprop="dateCreated datePublished" datetime="2021-01-02T17:02:49+08:00">2021-01-02</time>
     </span>
 
   
@@ -287,7 +287,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h4 id="克隆源码"><a href="#克隆源码" class="headerlink" title="克隆源码"></a>克隆源码</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;gitee.com&#x2F;winlinvip&#x2F;srs.oschina.git srs &amp;&amp;</span><br><span class="line">cd srs&#x2F;trunk &amp;&amp; git remote set-url origin https:&#x2F;&#x2F;github.com&#x2F;ossrs&#x2F;srs.git &amp;&amp; git pull</span><br></pre></td></tr></table></figure>
+        <h1 id="WSL2安装SRS"><a href="#WSL2安装SRS" class="headerlink" title="WSL2安装SRS"></a>WSL2安装SRS</h1><h4 id="克隆源码"><a href="#克隆源码" class="headerlink" title="克隆源码"></a>克隆源码</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;gitee.com&#x2F;winlinvip&#x2F;srs.oschina.git srs &amp;&amp;</span><br><span class="line">cd srs&#x2F;trunk &amp;&amp; git remote set-url origin https:&#x2F;&#x2F;github.com&#x2F;ossrs&#x2F;srs.git &amp;&amp; git pull</span><br></pre></td></tr></table></figure>
 <h4 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./configure --full --use-sys-ssl --without-utest &amp;&amp; make</span><br></pre></td></tr></table></figure>
 <p>srs官方自带的openssl-1.1.0e无法在wsl中安装，所以这里使用系统openssl，且需要安装libssl-dev，不然会在头文件中找不到openssl相关声明，安装libssl-dev过程中，会遇到依赖问题：</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">The following packages have unmet dependencies:</span><br><span class="line"> libssl<span class="literal">-dev</span> : Depends: libssl1.<span class="number">1</span> (= <span class="number">1.1</span>.<span class="number">1</span><span class="literal">-1ubuntu2</span>.<span class="number">1</span>~<span class="number">18.04</span>.<span class="number">6</span>) but <span class="number">1.1</span>.<span class="number">1</span>f<span class="literal">-1ubuntu2</span> is to be installed</span><br><span class="line">E: Unable to correct problems, you have held broken packages.</span><br></pre></td></tr></table></figure>
@@ -367,7 +367,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">sisyphus</span>
 </div>
-  <div class="powered-by">Erstellt mit  <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
+  <div class="powered-by">تطبيق الموقع <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
   </div>
 
     </div>
